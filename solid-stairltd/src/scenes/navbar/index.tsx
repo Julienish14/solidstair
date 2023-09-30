@@ -12,7 +12,6 @@ type Props = {
 const Navbar = ({selectedPage, setSelectedPage}: Props) => {
   const flexBetween = "flex items-center justify-between";
 
-
   return <nav>
     <div
       className={`${flexBetween} fixed top-0 z-30 w-full py-6`}
@@ -23,7 +22,7 @@ const Navbar = ({selectedPage, setSelectedPage}: Props) => {
           <img alt="logo" src={Logo} />
 
           {/* Right side */}
-          <div className={`${flexBetween} w-full`}>
+          <div className={`${flexBetween} w-3/5`}>
             <div className={`${flexBetween} gap-8 text-sm`}>
               <Link 
                 page="Home" 
